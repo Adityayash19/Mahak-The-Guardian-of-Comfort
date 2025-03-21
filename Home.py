@@ -48,7 +48,7 @@ if not GOOGLE_API_KEY:
 
 # Initialize Gemini API
 gen_ai.configure(api_key=GOOGLE_API_KEY)
-model = gen_ai.GenerativeModel('gemini-pro')
+model = gen_ai.GenerativeModel('gemini-1.5-pro')
 
 # Function to initialize chat history (without displaying system prompt)
 if "chat_history" not in st.session_state:
